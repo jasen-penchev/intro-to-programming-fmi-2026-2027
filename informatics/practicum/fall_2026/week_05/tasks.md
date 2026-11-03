@@ -175,9 +175,9 @@ A D b f c
 
 Изход:
 True
+True
 False
-True
-True
+False
 ```
 
 ### Задача 11 → Римски запис на число
