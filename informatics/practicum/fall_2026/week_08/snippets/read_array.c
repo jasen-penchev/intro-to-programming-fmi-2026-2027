@@ -1,21 +1,22 @@
+#define _CRT_SECURE_NO_WARNINGS
 #define CAPACITY 5
 
 #include <stdio.h>
 
-void printArray(int arr[], unsigned int size) {
+void readArray(int arr[], unsigned int size) {
     for (unsigned int i = 0; i < size; ++i) {
-        printf("%d ", arr[i]);
+        scanf("%d", &arr[i]);
     }
-
-    printf("\n");
 }
 
 int main() {
-    int arr[CAPACITY] = { 10, 20, 30, 40, 50 };
+    int arr[CAPACITY];
 
-    printf("Array contents:\n");
+    printf("Enter %u integers:\n", CAPACITY);
 
-    printArray(arr, CAPACITY);
+    readArray(arr, CAPACITY);
+
+    printf("Input reading completed.\n");
 
     return 0;
 }
